@@ -1,0 +1,62 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.invitation {
+  width: 320px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .app-button{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .desire {
+      font-family: 'Open-Sans', sans-serif;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      align-items: center;
+  }
+
+  .prenames {
+    font-family: 'GlacialIndifference', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+
+  .names {
+    font-family: 'Olivare-Base', serif;
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 320px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hr {
+    text-align: center;
+    align-items: center;
+    width: 240px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+  }
+
+}

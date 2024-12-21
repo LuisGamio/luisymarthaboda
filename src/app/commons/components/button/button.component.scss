@@ -1,0 +1,85 @@
+.custom-button {
+  font-size: 16px;
+  height: 65px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00bfff;
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+
+  &.mode1 {
+    background-color: #ff66c4;
+    color: white;
+
+    &:hover {
+      background-color: #ff3399;  // Cambia el color del fondo al pasar el mouse
+    }
+
+    &:active {
+      background-color: #cc2971;  // Cambia el color cuando el botón está activo
+    }
+  }
+
+  // Para cuando el color es 'mode2'
+  &.mode2 {
+    background-color: white;
+    color: #7f4ca5;
+
+    &:hover {
+      background-color: #e6e6e6;  // Cambia el color del fondo al pasar el mouse
+    }
+
+    &:active {
+      background-color: #cccccc;  // Cambia el color cuando el botón está activo
+    }
+  }
+
+  &:active {
+    // background-color: #0078a0;
+    /* Azul más oscuro al hacer clic */
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    /* Gris cuando está deshabilitado */
+    cursor: not-allowed;
+  }
+
+  .button-icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .button-text {
+    font-weight: 600;
+    font-family: 'Open-Sans', sans-serif;
+  }
+}
+
+.color-white {
+  color: white;
+}
+
+.color-purple {
+  color: #b57edc;
+}
+
+
+
+// .mode1 {
+//   background-color: #ff66c4;
+//   color: white;
+// }
+
+// .mode2 {
+//   background-color: white;
+//   color: white;
+// }

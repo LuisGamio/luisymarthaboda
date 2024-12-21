@@ -1,0 +1,20 @@
+<button
+[ngClass]="{ 'mode1': color == 'mode1','mode2': color == 'mode2' }"
+  (click)="handleClick()"
+  [class.disabled]="disabled"
+  class="custom-button"
+  [disabled]="disabled">
+  <span
+  class="button-text"
+  [ngClass]="{
+    'color-white': color === 'mode1',
+    'color-purple': color === 'mode2'
+  }"
+>
+  {{ text }}
+</span>
+
+  <!-- <span class="button-icon" *ngIf="icon != ''">
+    <tdp-icon [icon]="icon"></tdp-icon>
+  </span> -->
+</button>
