@@ -9,18 +9,7 @@
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .invitation2 {
-    width: 100%;
 
-    .image {
-      width: 100%;
-      height: auto;
-      background-size: cover;
-      background-position: center;
-    }
-  }
-}
 
 .invitation {
   width: 320px;
@@ -76,15 +65,28 @@
 }
 
 .invitation2 {
-  width: 120%;
+  width: 320px;
   display: flex;
   flex-direction: column;
+}
 
-  .image {
+.invitation2 .image {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 768px) {
+  .invitation2 {
+    width: 120%;
+  }
+
+  .invitation2 .image {
     width: 100%;
     height: auto;
     background-size: cover;
     background-position: center;
   }
-
 }
