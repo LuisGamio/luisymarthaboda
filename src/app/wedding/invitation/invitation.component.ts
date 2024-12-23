@@ -7,12 +7,17 @@ import { Component } from '@angular/core';
 })
 export class InvitationComponent {
 
-  nextStep(){}
+  step: number = 1;
+
+  nextStep(){
+    this.step = 2;
+  }
 
   audio(){
     let audio = new Audio();
     audio.src = 'assets/audio/dreams.mp3';
     audio.load();
     audio.play();
+    this.step = 2;
   }
 }

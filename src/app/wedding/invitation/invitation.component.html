@@ -1,48 +1,77 @@
+<div [ngSwitch]="step">
+  <ng-container *ngSwitchCase="1">
+    <div class="container">
 
-<div class="container">
+      <div class="invitation2" style="margin-top: 20px;" >
+        <div class="image">
+          <img
+                src="../../../assets/images/silueta-pareja.png"
+                alt="silueta" class="image"
+              />
+        </div>
+      </div>
 
-  <div class="invitation2" style="margin-top: 20px;" >
-    <div class="image">
-      <img
-            src="../../../assets/images/silueta-pareja.png"
-            alt="silueta" class="image"
-          />
+      <div class="invitation" style="margin-bottom: 20px;">
+        <div class="hr">
+        </div>
+        <div class="prenames">
+          Bienvenidos a la invitación de
+        </div>
+        <div class="names">
+          Luis y Martha
+        </div>
+        <div class="hr">
+        </div>
+        <div class="desire">
+          Quisieramos que seas parte de este momento especial ❣️
+        </div>
+        <app-button
+        [text]="'Ingresar con música'"
+        [icon]="'arrow_right_regular_24'"
+        [disabled]="false"
+        (onClick)="audio()"
+        [color]="'mode2'"
+        style="margin-bottom: 10px;"
+      >
+      </app-button>
+
+      <app-button
+      [text]="'Ingresar sin música'"
+      [icon]="'arrow_right_regular_24'"
+      [disabled]="false"
+      (onClick)="nextStep()"
+      [color]="'mode1'"
+      >
+      </app-button>
+      </div>
+
     </div>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="2">
+
+    <div style="width: 100%; height: auto; background: #2F3E53; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+      <div style="align-self: stretch; height: 807px; position: relative">
+          <div style="width: 100%; height: 166px; left: 0px; top: 0px; position: absolute; background: white"></div>
+          <div style="width: 279px; left: 40px; top: 34px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Un nuevo capítulo bajo Su plan.</div>
+          <div style="width: 279px; left: 40px; top: 598px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Nos casamos</div>
+          <div style="width: 279px; left: 40px; top: 646px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Reproduce esta canción</div>
+          <div style="width: 230px; height: 105px; left: 65px; top: 470px; position: absolute; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <div class="oliver" style="flex: 1 1 0; text-align: right; color: white; font-size: 70px; font-weight: 400; line-height: 35px; word-wrap: break-word">Luis y<br/><br/>Martha</div>
+          </div>
+
+          <div style="width: 298px; height: 105px; left: 30px; top: 762px; position: absolute;">
+            <app-audio-player></app-audio-player>
+          </div>
+          <div style="width: 293px; height: 438px; left: 7px; top: 74px; position: absolute">
+              <img style="width: 241px; height: 362px; left: 52px; top: 0px; position: absolute" src="../../../assets/images/prueba.jpg" />
+              <img style="width: 195px; height: 195px; left: 195px; top: 438px; position: absolute; transform: rotate(180deg); transform-origin: 0 0" src="../../../assets/images/flores.png" />
+          </div>
+      </div>
   </div>
-
-  <div class="invitation" style="margin-bottom: 20px;">
-    <div class="hr">
-    </div>
-    <div class="prenames">
-      Bienvenidos a la invitación de
-    </div>
-    <div class="names">
-      Luis y Martha
-    </div>
-    <div class="hr">
-    </div>
-    <div class="desire">
-      Quisieramos que seas parte de este momento especial ❣️
-    </div>
-    <app-button
-    [text]="'Ingresar con música'"
-    [icon]="'arrow_right_regular_24'"
-    [disabled]="false"
-    (onClick)="audio()"
-    [color]="'mode2'"
-  >
-  </app-button>
-
-  <app-button
-  [text]="'Ingresar sin música'"
-  [icon]="'arrow_right_regular_24'"
-  [disabled]="false"
-  (onClick)="nextStep()"
-  [color]="'mode1'"
-  >
-  </app-button>
-  </div>
-
+  </ng-container>
 </div>
+
+
 
 

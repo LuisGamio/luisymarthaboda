@@ -1,0 +1,15 @@
+<div class="wedding-card">
+  <div class="audio-player">
+    <div class="info">
+      <h2>¡Nuestra Canción de Boda! 🎵</h2>
+      <p>Reproduce nuestra canción especial mientras exploras nuestra tarjeta de boda.</p>
+    </div>
+    <audio #audio src="assets/audio/dreams.mp3"></audio>
+    <div class="controls">
+      <button class="play-pause" (click)="togglePlay(audio)">
+        {{ isPlaying ? '⏸️' : '▶️' }}
+      </button>
+      <button class="heart" [class.active]="isFavorite" (click)="toggleHeart()">❤️</button>
+    </div>
+  </div>
+</div>

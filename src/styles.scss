@@ -3,9 +3,9 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 
-.bg-color {
-  background-color: #b57edc;
-}
+// .bg-color {
+//   background-color: #b57edc;
+// }
 
 .tdp-table__content {
   width: 100%;
@@ -100,6 +100,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Oliver-Blush';
+  src: url('assets/fonts/OliverBlush.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'GlacialIndifference';
   src: url('assets/fonts/GlacialIndifference-Bold.otf') format('opentype');
   font-weight: bold;  /* Establece el peso correcto para la fuente */
@@ -107,6 +114,11 @@ body {
 }
 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 // @font-face {
