@@ -127,6 +127,17 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sontheval';
+  src: url('assets/fonts/Sontheval.otf') format('opentype');
+  font-weight: normal;  /* Establece el peso correcto para la fuente */
+  font-style: normal;
+}
+
+.Sontheval {
+  font-family: 'Sontheval', sans-serif;
+}
+
 .LastChristmas {
   font-family: 'LastChristmas', sans-serif;
 }

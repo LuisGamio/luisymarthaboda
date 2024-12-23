@@ -6,6 +6,7 @@ import { WeddingModuleRoutingModule } from './wedding-routing.module';
 import { CommonsModule } from '../commons/commons.module';
 import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
 import { DateSectionComponent } from './components/date-section/date-section.component';
+import { AssistanceSectionComponent } from './components/assistance-section/assistance-section.component';
 
 
 
@@ -14,7 +15,8 @@ import { DateSectionComponent } from './components/date-section/date-section.com
   declarations: [
     InvitationComponent,
     WelcomeSectionComponent,
-    DateSectionComponent
+    DateSectionComponent,
+    AssistanceSectionComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,6 @@ import { DateSectionComponent } from './components/date-section/date-section.com
     FormsModule,
     CommonsModule
   ],
-  exports: [InvitationComponent,WelcomeSectionComponent,DateSectionComponent]
+  exports: [InvitationComponent,WelcomeSectionComponent,DateSectionComponent,InvitationComponent]
 })
 export class WeddingModule {}
