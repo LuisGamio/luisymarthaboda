@@ -1,0 +1,26 @@
+<div class="countdown-container">
+  <ng-container *ngIf="timeRemaining > 0; else weddingDay">
+    <div class="countdown-item">
+      <div>{{ days }}</div>
+      <div class="countdown-label">Días</div>
+    </div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item">
+      <div>{{ hours }}</div>
+      <div class="countdown-label">Horas</div>
+    </div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item">
+      <div>{{ minutes }}</div>
+      <div class="countdown-label">Minutos</div>
+    </div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item">
+      <div>{{ seconds }}</div>
+      <div class="countdown-label">Segundos</div>
+    </div>
+  </ng-container>
+  <ng-template #weddingDay>
+    <p class="oliver">¡Hoy es el gran día!</p>
+  </ng-template>
+</div>

@@ -3,9 +3,9 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 
-// .bg-color {
-//   background-color: #b57edc;
-// }
+.bg-color {
+  background-color: #22445D;
+}
 
 .tdp-table__content {
   width: 100%;
@@ -113,6 +113,27 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'LastChristmas';
+  src: url('assets/fonts/last.otf') format('opentype');
+  font-weight: normal;  /* Establece el peso correcto para la fuente */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArchattsonHollmytro';
+  src: url('assets/fonts/ArchattsonHollmytro.otf') format('opentype');
+  font-weight: normal;  /* Establece el peso correcto para la fuente */
+  font-style: normal;
+}
+
+.LastChristmas {
+  font-family: 'LastChristmas', sans-serif;
+}
+
+.ArchattsonHollmytro {
+  font-family: 'ArchattsonHollmytro', sans-serif;
+}
 
 * {
   margin: 0;

@@ -1,0 +1,38 @@
+
+
+.countdown-container {
+  display: flex;
+  flex-direction: row; /* Asegura alineación horizontal */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  // margin-top: 50px;
+  background-color: #2F3E53 ; /* Color de fondo */
+  padding: 20px; /* Añadir padding opcional para mejor espaciado */
+
+}
+
+.countdown-item {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+}
+
+.countdown-separator {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.oliver {
+  font-family: 'Oliver-Blush', sans-serif;
+  font-size: 40px;
+  color: white;
+}
