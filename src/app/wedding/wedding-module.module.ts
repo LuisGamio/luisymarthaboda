@@ -7,6 +7,7 @@ import { CommonsModule } from '../commons/commons.module';
 import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
 import { DateSectionComponent } from './components/date-section/date-section.component';
 import { AssistanceSectionComponent } from './components/assistance-section/assistance-section.component';
+import { GiftSectionComponent } from './components/gift-section/gift-section.component';
 
 
 
@@ -16,7 +17,8 @@ import { AssistanceSectionComponent } from './components/assistance-section/assi
     InvitationComponent,
     WelcomeSectionComponent,
     DateSectionComponent,
-    AssistanceSectionComponent
+    AssistanceSectionComponent,
+    GiftSectionComponent
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,10 @@ import { AssistanceSectionComponent } from './components/assistance-section/assi
     FormsModule,
     CommonsModule
   ],
-  exports: [InvitationComponent,WelcomeSectionComponent,DateSectionComponent,InvitationComponent]
+  exports: [InvitationComponent,
+    WelcomeSectionComponent,
+    DateSectionComponent,
+    InvitationComponent,
+    GiftSectionComponent]
 })
 export class WeddingModule {}
