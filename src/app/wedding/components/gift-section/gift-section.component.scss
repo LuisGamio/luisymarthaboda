@@ -2,3 +2,16 @@
   color: white;
   font-size: 90px; /* Puedes ajustar el tamaño */
 }
+
+
+.copy-icon {
+  margin-left: 8px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.copy-icon:hover {
+  color: lightblue;
+}

@@ -93,6 +93,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Inika';
+  src: url('assets/fonts/Inika-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Olivare-Base';
   src: url('assets/fonts/OlivareBase.ttf') format('truetype');
   font-weight: normal;
@@ -136,6 +143,10 @@ body {
 
 .Sontheval {
   font-family: 'Sontheval', sans-serif;
+}
+
+.Inika {
+  font-family: 'Inika', sans-serif;
 }
 
 .LastChristmas {
