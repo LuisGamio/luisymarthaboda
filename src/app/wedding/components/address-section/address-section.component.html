@@ -1,1 +1,18 @@
-<p>address-section works!</p>
+<div class="address-section">
+  <!-- Ceremonia -->
+  <div class="event">
+    <img src="assets/images/iglesia.jpg" alt="Ceremonia" class="event-image">
+    <h2 class="event-title">Ceremonia</h2>
+    <p class="event-details">Iglesia Alianza Cristiana y Misionera</p>
+    <p class="event-details">2:30 PM</p>
+    <button class="event-button" (click)="openMap(ceremonyLocation)">Ver mapa</button>
+  </div>
+
+  <!-- Recepción -->
+  <div class="event">
+    <img src="assets/images/maratuechjpg" alt="Recepción" class="event-image">
+    <h2 class="event-title">Recepción</h2>
+    <p class="event-details">Fundo Maratuech</p>
+    <button class="event-button" (click)="openMap(receptionLocation)">Ver mapa</button>
+  </div>
+</div>
