@@ -1,0 +1,53 @@
+.player-container {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.progress-container input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+}
+
+.playlist {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.playlist div {
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.playlist div:hover {
+  background-color: #34495e;
+}
+
+.playlist .active {
+  background-color: #1abc9c;
+  color: white;
+  font-weight: bold;
+}

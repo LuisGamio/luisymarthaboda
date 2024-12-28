@@ -8,6 +8,10 @@ import { WelcomeSectionComponent } from './components/welcome-section/welcome-se
 import { DateSectionComponent } from './components/date-section/date-section.component';
 import { AssistanceSectionComponent } from './components/assistance-section/assistance-section.component';
 import { GiftSectionComponent } from './components/gift-section/gift-section.component';
+import { TimelineSectionComponent } from './components/timeline-section/timeline-section.component';
+import { AddressSectionComponent } from './components/address-section/address-section.component';
+import { DressCodeSectionComponent } from './components/dress-code-section/dress-code-section.component';
+import { ParentsSectionComponent } from './components/parents-section/parents-section.component';
 
 
 
@@ -18,7 +22,11 @@ import { GiftSectionComponent } from './components/gift-section/gift-section.com
     WelcomeSectionComponent,
     DateSectionComponent,
     AssistanceSectionComponent,
-    GiftSectionComponent
+    GiftSectionComponent,
+    TimelineSectionComponent,
+    AddressSectionComponent,
+    DressCodeSectionComponent,
+    ParentsSectionComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +39,9 @@ import { GiftSectionComponent } from './components/gift-section/gift-section.com
     WelcomeSectionComponent,
     DateSectionComponent,
     InvitationComponent,
-    GiftSectionComponent]
+    GiftSectionComponent,
+    AddressSectionComponent,
+    DressCodeSectionComponent,
+    ParentsSectionComponent]
 })
 export class WeddingModule {}

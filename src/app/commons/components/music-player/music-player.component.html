@@ -1,0 +1,42 @@
+<div class="player-container">
+  <audio #audioPlayer></audio>
+
+  <!-- Barra de progreso -->
+  <div class="progress-container">
+    <input
+      type="range"
+      [value]="currentProgress"
+      (input)="updateProgress($event)"
+    />
+  </div>
+
+  <!-- Controles de reproducción -->
+  <div class="controls">
+    <button (click)="toggleShuffle()">
+      <i class="material-icons">{{ isShuffle ? 'shuffle_on' : 'shuffle' }}</i>
+    </button>
+    <button (click)="playPrevious()">
+      <i class="material-icons">skip_previous</i>
+    </button>
+    <button (click)="togglePlay()">
+      <i class="material-icons">{{ isPlaying ? 'pause' : 'play_arrow' }}</i>
+    </button>
+    <button (click)="playNext()">
+      <i class="material-icons">skip_next</i>
+    </button>
+    <button (click)="toggleRepeat()">
+      <i class="material-icons">{{ isRepeat ? 'repeat_on' : 'repeat' }}</i>
+    </button>
+  </div>
+
+  <!-- Lista de canciones -->
+  <!-- <div class="playlist">
+    <div
+      *ngFor="let track of playlist; let i = index"
+      [class.active]="currentTrackIndex === i"
+      (click)="playTrack(i)"
+    >
+      {{ track.title }}
+    </div>
+  </div> -->
+</div>
