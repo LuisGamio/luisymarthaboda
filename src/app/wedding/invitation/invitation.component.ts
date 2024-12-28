@@ -1,23 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-invitation',
   templateUrl: './invitation.component.html',
   styleUrls: ['./invitation.component.scss']
 })
-export class InvitationComponent {
+export class InvitationComponent implements OnInit {
+  loading:boolean = true;
+  introduction:boolean = true;
 
-  step: number = 1;
-
-  nextStep(){
-    this.step = 2;
+  ngOnInit(): void {
+    // Espera a que todas las imágenes y recursos se carguen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        this.loading = false; // Oculta el loading
+      }, 2000); // Tiempo adicional para una mejor transición (opcional)
+    });
   }
+  musicPlay:boolean = false;
 
-  audio(){
-    let audio = new Audio();
-    audio.src = 'assets/audio/dreams.mp3';
-    audio.load();
-    audio.play();
-    this.step = 2;
+  onPlay(music: boolean): void {
+    this.musicPlay= music;
+    this.introduction = false; // Actualiza la variable según sea necesario
   }
 }

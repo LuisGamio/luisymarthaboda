@@ -1,43 +1,21 @@
-<div [ngSwitch]="step">
-  <ng-container *ngSwitchCase="1">
-    <div class="container">
+<div *ngIf="loading">
+  <app-loading></app-loading>
+</div>
 
-      <div class="invitation2" style="margin-top: 20px;">
-        <div class="image">
-          <img src="../../../assets/images/silueta-pareja.png" alt="silueta" class="image" />
-        </div>
-      </div>
+<div *ngIf="!loading">
+  <div *ngIf="introduction">
+    <app-introduction-section (playEvent)="onPlay($event)"></app-introduction-section>
+  </div>
 
-      <div class="invitation" style="margin-bottom: 20px;">
-        <div class="hr">
-        </div>
-        <div class="prenames">
-          Bienvenidos a la invitación de
-        </div>
-        <div class="names">
-          Luis y Martha
-        </div>
-        <div class="hr">
-        </div>
-        <div class="desire">
-          Quisieramos que seas parte de este momento especial ❣️
-        </div>
-        <app-button [text]="'Ingresar con música'" [icon]="'arrow_right_regular_24'" [disabled]="false"
-          (onClick)="audio()" [color]="'mode2'" style="margin-bottom: 10px;">
-        </app-button>
-
-        <app-button [text]="'Ingresar sin música'" [icon]="'arrow_right_regular_24'" [disabled]="false"
-          (onClick)="nextStep()" [color]="'mode1'">
-        </app-button>
-      </div>
-
-    </div>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="2">
-    <app-welcome-section></app-welcome-section>
+  <div *ngIf="!introduction">
+    <app-welcome-section [musicPlay]="musicPlay"></app-welcome-section>
     <app-date-section></app-date-section>
+    <!-- <app-parents-section></app-parents-section>
+    <app-address-section></app-address-section>
+    <app-timeline-section></app-timeline-section>
+    <app-dress-code-section></app-dress-code-section> -->
     <app-gift-section></app-gift-section>
     <app-assistance-section></app-assistance-section>
-  </ng-container>
+  </div>
 </div>
+

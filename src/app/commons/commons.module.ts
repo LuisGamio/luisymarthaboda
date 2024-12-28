@@ -5,11 +5,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AudioPlayerComponent } from './components/audio-player/audio-player.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { MusicPlayerComponent } from './components/music-player/music-player.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 
 
 @NgModule({
-  declarations: [ButtonComponent, AudioPlayerComponent, CountdownTimerComponent, MusicPlayerComponent],
+  declarations: [
+    ButtonComponent,
+    AudioPlayerComponent,
+    CountdownTimerComponent,
+    MusicPlayerComponent,
+    LoadingComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -22,7 +28,8 @@ import { MusicPlayerComponent } from './components/music-player/music-player.com
     ButtonComponent,
     AudioPlayerComponent,
     CountdownTimerComponent,
-    MusicPlayerComponent],
+    MusicPlayerComponent,
+    LoadingComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class CommonsModule { }

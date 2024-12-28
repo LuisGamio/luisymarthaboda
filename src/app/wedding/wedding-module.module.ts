@@ -12,6 +12,7 @@ import { TimelineSectionComponent } from './components/timeline-section/timeline
 import { AddressSectionComponent } from './components/address-section/address-section.component';
 import { DressCodeSectionComponent } from './components/dress-code-section/dress-code-section.component';
 import { ParentsSectionComponent } from './components/parents-section/parents-section.component';
+import { IntroductionSectionComponent } from './components/introduction-section/introduction-section.component';
 
 
 
@@ -26,7 +27,8 @@ import { ParentsSectionComponent } from './components/parents-section/parents-se
     TimelineSectionComponent,
     AddressSectionComponent,
     DressCodeSectionComponent,
-    ParentsSectionComponent
+    ParentsSectionComponent,
+    IntroductionSectionComponent
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { ParentsSectionComponent } from './components/parents-section/parents-se
     GiftSectionComponent,
     AddressSectionComponent,
     DressCodeSectionComponent,
-    ParentsSectionComponent]
+    ParentsSectionComponent,
+    IntroductionSectionComponent]
 })
 export class WeddingModule {}

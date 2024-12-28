@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-welcome-section',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome-section.component.scss']
 })
 export class WelcomeSectionComponent {
+
+  @Input() musicPlay:boolean = false;
 
 }

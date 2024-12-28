@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #b57edc;
+}
+
+
+
+.invitation {
+  width: 320px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .app-button {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .desire {
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .prenames {
+    font-family: 'GlacialIndifference', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+
+  .names {
+    font-family: 'Olivare-Base', serif;
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 320px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hr {
+    text-align: center;
+    align-items: center;
+    width: 240px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+  }
+
+}
+
+.invitation2 {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.invitation2 .image {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 768px) {
+  .invitation2 {
+    width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .invitation2 .image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container-2 .image-background {
+  flex: 0 0 30%;
+  background-image: url('../../../../assets/images/fondo.png');
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Para posicionar el contenido interno */
+  overflow: visible; /* Permite que los hijos sobresalgan */
+  z-index: 2; /* Asegura que esté encima del fondo */
+}
+
+.container-2 .color-background {
+  flex: 0 0 70%;
+  background-color: rgb(47, 62, 83);
+  position: relative;
+  z-index: 1; /* Debajo del área de la imagen */
+}
+
+.container-2 .names {
+  margin-top: 30px;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 14px;
+  color: rgb(47, 62, 83);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container-2 .image {
+  text-align: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: auto;/* Limita la altura para que no exceda la pantalla */
+  position: absolute;
+  top: 0; /* Inicia desde la parte superior del contenedor */
+  left: 0; /* Inicia desde la izquierda */
+  right: 0; /* Asegura que no haya desplazamiento horizontal */
+  z-index: 3; /* Por encima de ambos fondos */
+}
+
+
+.oliver {
+  font-family: 'Oliver-Blush', sans-serif;
+}

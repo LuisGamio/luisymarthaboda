@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="invitation2" style="margin-top: 20px;">
+    <div class="image">
+      <img src="../../../assets/images/silueta-pareja.png" alt="silueta" class="image" />
+    </div>
+  </div>
+
+  <div class="invitation" style="margin-bottom: 20px;">
+    <div class="hr">
+    </div>
+    <div class="prenames">
+      Bienvenidos a la invitación de
+    </div>
+    <div class="names">
+      Luis y Martha
+    </div>
+    <div class="hr">
+    </div>
+    <div class="desire">
+      Quisieramos que seas parte de este momento especial ❣️
+    </div>
+    <app-button [text]="'Ingresar con música'" [icon]="'arrow_right_regular_24'" [disabled]="false"
+      (onClick)="play(true)" [color]="'mode2'" style="margin-bottom: 10px;">
+    </app-button>
+
+    <app-button [text]="'Ingresar sin música'" [icon]="'arrow_right_regular_24'" [disabled]="false"
+      (onClick)="play(false)" [color]="'mode1'">
+    </app-button>
+  </div>
+
+</div>

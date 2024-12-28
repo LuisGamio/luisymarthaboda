@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-music-player',
   templateUrl: './music-player.component.html',
   styleUrls: ['./music-player.component.scss']
 })
-export class MusicPlayerComponent {
+export class MusicPlayerComponent implements OnChanges {
   playlist = [
     { title: 'Juntitos', url: 'assets/audio/juntitos.mp3' },
     { title: 'Somos', url: 'assets/audio/somos.mp3' },
     { title: 'Lista', url: 'assets/audio/lista.mp3' },
     { title: 'Dreams', url: 'assets/audio/dreams.mp3' }
   ];
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // Verifica si hubo un cambio en 'musicPlay'
+    if (changes['musicPlay'] && changes['musicPlay'].currentValue === true) {
+      this.togglePlay();
+    }
+  }
+
+  @Input() musicPlay:boolean = false;
 
   currentTrackIndex = 0;
   isPlaying = false;
