@@ -1,53 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
 body {
   font-family: "Roboto", sans-serif !important;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background-color: #2F3E53; /* Asegúrate de que el fondo coincida con tu diseño */
-}
-
-app-root {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  padding-bottom: env(safe-area-inset-bottom); /* Para cubrir la zona de botones */
-  background-color: #2F3E53; /* Fondo consistente */
-}
-
-body {
-  padding: var(--safe-area-inset-top) var(--safe-area-inset-right) var(--safe-area-inset-bottom) var(--safe-area-inset-left);
-}
-
-.bg-color {
-  background-color: #2F3E53;
-  width: 100%;
-  height: 100vh; /* Asegura que el fondo ocupe toda la altura visible */
 }
 
 app-root {
   padding-bottom: calc(env(safe-area-inset-bottom, 0px));
 }
 
-:root {
-  --vh: 1vh;
-}
 
-html {
-  height: calc(var(--vh, 1vh) * 100); /* Ajusta la altura visible */
+.bg-color {
+  background-color: #2F3E53;
 }
-
-body,
-app-root {
-  height: 100%;
-}
-
 
 .tdp-table__content {
   width: 100%;
@@ -204,3 +167,23 @@ app-root {
   padding: 0;
   box-sizing: border-box;
 }
+
+
+// @font-face {
+//   font-family: 'Open-Sans';
+//   src: url('assets/fonts/opensans.woff2') format('woff2'),
+//        url('assets/fonts/opensans.woff') format('woff'),
+//        url('assets/fonts/opensans.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Olivare-Base';
+//   src: url('assets/fonts/OlivareBase.woff2') format('woff2'),
+//        url('assets/fonts/OlivareBase.woff') format('woff'),
+//        url('assets/fonts/OlivareBase.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
