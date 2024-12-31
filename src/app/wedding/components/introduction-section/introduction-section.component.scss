@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -40,8 +40,8 @@
   }
 
   .names {
-    font-family: 'Olivare-Base', serif;
-    font-size: 38px;
+    // font-family: 'Olivare-Base', serif;
+    font-size: 58px;
     color: white;
     text-align: center;
     align-items: center;
@@ -125,7 +125,7 @@
 
 .container-2 .names {
   margin-top: 30px;
-  font-family: 'Open-Sans', sans-serif;
+  // font-family: 'Open-Sans', sans-serif;
   font-size: 14px;
   color: rgb(47, 62, 83);
   text-align: center;

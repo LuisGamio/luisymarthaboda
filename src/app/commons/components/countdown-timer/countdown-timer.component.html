@@ -1,23 +1,25 @@
+<div *ngIf="timeRemaining > 0;" class="Zachar" style="padding-bottom: 20px;align-self: stretch; text-align: center; color: white; font-size: 32px; font-weight: 100; word-wrap: break-word">Faltan</div>
 <div class="countdown-container">
+
   <ng-container *ngIf="timeRemaining > 0; else weddingDay">
     <div class="countdown-item">
       <div>{{ days }}</div>
-      <div class="countdown-label">Días</div>
+      <div class="countdown-label Aragon">DÍAS</div>
     </div>
     <div class="countdown-separator">:</div>
     <div class="countdown-item">
       <div>{{ hours }}</div>
-      <div class="countdown-label">Horas</div>
+      <div class="countdown-label Aragon">HORAS</div>
     </div>
     <div class="countdown-separator">:</div>
     <div class="countdown-item">
       <div>{{ minutes }}</div>
-      <div class="countdown-label">Minutos</div>
+      <div class="countdown-label Aragon">MINUTOS</div>
     </div>
     <div class="countdown-separator">:</div>
     <div class="countdown-item">
       <div>{{ seconds }}</div>
-      <div class="countdown-label">Segundos</div>
+      <div class="countdown-label Aragon">SEGUNDOS</div>
     </div>
   </ng-container>
   <ng-template #weddingDay>

@@ -7,10 +7,19 @@ app-root {
   padding-bottom: calc(env(safe-area-inset-bottom, 0px));
 }
 
-
-.bg-color {
-  background-color: #2F3E53;
+.background-div {
+  width: 100%; /* Ajusta según sea necesario */
+  height: auto; /* Ajusta según sea necesario */
+  background-image: url('assets/images/fondo.png'); /* URL de la imagen */
+  background-size: cover; /* Escala la imagen para cubrir todo el div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
+
+// .bg-color {
+//   background-color: #2F3E53;
+// }
 
 .tdp-table__content {
   width: 100%;
@@ -119,6 +128,20 @@ app-root {
 }
 
 @font-face {
+  font-family: 'MeaCulpa';
+  src: url('assets/fonts/MeaCulpa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zachar';
+  src: url('assets/fonts/Zachar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'GlacialIndifference';
   src: url('assets/fonts/GlacialIndifference-Bold.otf') format('opentype');
   font-weight: bold;  /* Establece el peso correcto para la fuente */
@@ -146,8 +169,28 @@ app-root {
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'Aragon';
+  src: url('assets/fonts/Aragon.otf') format('opentype');
+  font-weight: normal;  /* Establece el peso correcto para la fuente */
+  font-style: normal;
+}
+
+.Aragon {
+  font-family: 'Aragon', sans-serif;
+}
+
+.Zachar {
+  font-family: 'Zachar', sans-serif;
+}
+
 .Sontheval {
   font-family: 'Sontheval', sans-serif;
+}
+
+.MeaCulpa {
+  font-family: 'MeaCulpa', sans-serif;
 }
 
 .Inika {
@@ -168,6 +211,10 @@ app-root {
   box-sizing: border-box;
 }
 
+
+.Oliver-Blush {
+  font-family: 'Oliver-Blush', sans-serif;
+}
 
 // @font-face {
 //   font-family: 'Open-Sans';
