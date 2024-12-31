@@ -16,6 +16,15 @@ app-root {
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+.background-div-b {
+  width: 100%; /* Ajusta según sea necesario */
+  height: auto; /* Ajusta según sea necesario */
+  background-image: url('assets/images/fondob.png'); /* URL de la imagen */
+  background-size: cover; /* Escala la imagen para cubrir todo el div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
 
 // .bg-color {
 //   background-color: #2F3E53;
