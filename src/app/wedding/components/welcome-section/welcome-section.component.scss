@@ -1,3 +1,6 @@
+@import '~animate.css/animate.min.css';
+
+
 
 .oliver {
   font-family: 'Oliver-Blush', sans-serif;
@@ -30,4 +33,28 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+.Aragon.text {
+  position: relative;
+  display: inline-block;
+  color: rgb(107, 13, 214);
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.Aragon.text:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+
 
