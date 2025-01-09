@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-music-player',
@@ -54,14 +54,17 @@ export class MusicPlayerComponent implements OnChanges {
   }
 
   togglePlay(): void {
-    const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
-    if (this.isPlaying) {
-      audioPlayer.pause();
-    } else {
-      this.playAudio();
-    }
-    this.isPlaying = !this.isPlaying;
+  const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
+  if (this.isPlaying) {
+    audioPlayer.pause();
+  } else {
+    this.playAudio();
   }
+  this.isPlaying = !this.isPlaying;
+  this.cdRef.detectChanges(); // Forzar la actualización de la vista
+}
+
+constructor(private cdRef: ChangeDetectorRef){}
 
   playNext(): void {
     if (this.isShuffle) {
