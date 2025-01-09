@@ -3,30 +3,31 @@
 
   <!-- Barra de progreso -->
   <div class="progress-container">
-    <input
-      type="range"
-      [value]="currentProgress"
-      (input)="updateProgress($event)"
-    />
+    <input type="range" [value]="currentProgress" (input)="updateProgress($event)" />
   </div>
 
   <!-- Controles de reproducción -->
   <div class="controls">
-    <button (click)="toggleShuffle()">
-      <i class="material-icons">{{ isShuffle ? 'shuffle_on' : 'shuffle' }}</i>
-    </button>
-    <button (click)="playPrevious()">
-      <i class="material-icons">skip_previous</i>
-    </button>
-    <button (click)="togglePlay()">
-      <i class="material-icons">{{ isPlaying ? 'pause' : 'play_arrow' }}</i>
-    </button>
-    <button (click)="playNext()">
-      <i class="material-icons">skip_next</i>
-    </button>
-    <button (click)="toggleRepeat()">
-      <i class="material-icons">{{ isRepeat ? 'repeat_on' : 'repeat' }}</i>
-    </button>
+     <!-- Botón de Shuffle -->
+  <button mat-icon-button (click)="toggleShuffle()">
+    <mat-icon>{{ isShuffle ? 'shuffle_on' : 'shuffle' }}</mat-icon>
+  </button>
+    <!-- Botón de Retroceder -->
+  <button mat-icon-button (click)="playPrevious()">
+    <mat-icon>skip_previous</mat-icon>
+  </button>
+    <!-- Botón de Play/Pause -->
+  <button mat-icon-button (click)="togglePlay()">
+    <mat-icon>{{ isPlaying ? 'pause' : 'play_arrow' }}</mat-icon>
+  </button>
+    <!-- Botón de Avanzar -->
+  <button mat-icon-button (click)="playNext()">
+    <mat-icon>skip_next</mat-icon>
+  </button>
+    <!-- Botón de Repeat -->
+  <button mat-icon-button (click)="toggleRepeat()">
+    <mat-icon>{{ isRepeat ? 'repeat_on' : 'repeat' }}</mat-icon>
+  </button>
   </div>
 
   <!-- Lista de canciones -->

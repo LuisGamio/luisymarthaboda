@@ -6,7 +6,8 @@ import { AudioPlayerComponent } from './components/audio-player/audio-player.com
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { MusicPlayerComponent } from './components/music-player/music-player.component';
 import { LoadingComponent } from './components/loading/loading.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -22,6 +23,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     ReactiveFormsModule,
     NgFor,
     NgIf,
+    MatButtonModule,
+    MatIconModule
 
   ],
   exports:[
