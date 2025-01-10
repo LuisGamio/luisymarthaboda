@@ -1,5 +1,5 @@
 @import '~animate.css/animate.min.css';
-
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: "Roboto", sans-serif !important;
@@ -151,6 +151,13 @@ app-root {
 }
 
 @font-face {
+  font-family: 'Sothardjo';
+  src: url('assets/fonts/Sothardjo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'MeaCulpa';
   src: url('assets/fonts/MeaCulpa-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -160,6 +167,13 @@ app-root {
 @font-face {
   font-family: 'Zachar';
   src: url('assets/fonts/Zachar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nam';
+  src: url('assets/fonts/Nam.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -209,8 +223,16 @@ app-root {
   font-family: 'Aragon', sans-serif;
 }
 
+.Nam {
+  font-family: 'Nam', sans-serif;
+}
+
 .Zachar {
   font-family: 'Zachar', sans-serif;
+}
+
+.Sothardjo {
+  font-family: 'Sothardjo', sans-serif;
 }
 
 .Sontheval {
