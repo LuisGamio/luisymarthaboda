@@ -16,13 +16,13 @@ export class MusicPlayerComponent implements OnChanges {
   ];
 
   ngAfterViewInit() {
-    // Aquí puedes acceder correctamente al audioPlayer después de que el componente haya sido inicializado.
     const audioPlayer = this.audioPlayer.nativeElement;
     audioPlayer.ontimeupdate = () => {
       this.currentProgress =
         (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
     };
   }
+
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['musicPlay'] && changes['musicPlay'].currentValue === true) {
@@ -48,110 +48,7 @@ export class MusicPlayerComponent implements OnChanges {
     this.playAudio();
   }
 
-
-
-//   togglePlay(): void {
-//   const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
-//   if (this.isPlaying) {
-//     this.isPlaying=false;
-//     audioPlayer.pause();
-
-//   } else {
-//     this.isPlaying=true;
-//     this.playAudio();
-//   }
-
-//   this.cdRef.detectChanges();
-// }
-
-
-// playAudio(): void {
-//   const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
-//   audioPlayer.src = this.playlist[this.currentTrackIndex].url;
-//   audioPlayer.play();
-//   this.isPlaying = true;
-
-//   audioPlayer.ontimeupdate = () => {
-//     this.currentProgress =
-//       (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
-//   };
-
-//   audioPlayer.onended = () => {
-//     if (this.isRepeat) {
-//       this.playAudio();
-//     } else {
-//       this.playNext();
-//     }
-//   };
-// }
-
-
-
 constructor(private cdRef: ChangeDetectorRef){}
-
-  // playNext(): void {
-  //   if (this.isShuffle) {
-  //     this.currentTrackIndex = Math.floor(
-  //       Math.random() * this.playlist.length
-  //     );
-  //   } else {
-  //     this.currentTrackIndex =
-  //       (this.currentTrackIndex + 1) % this.playlist.length;
-  //   }
-  //   this.playAudio();
-  // }
-
-  // playPrevious(): void {
-  //   this.currentTrackIndex =
-  //     (this.currentTrackIndex - 1 + this.playlist.length) %
-  //     this.playlist.length;
-  //   this.playAudio();
-  // }
-
-  // togglePlay(): void {
-  //   const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
-
-  //   if (this.isPlaying) {
-  //     // Pausar el audio
-  //     audioPlayer.pause();
-  //     this.isPlaying = false;
-  //   } else {
-  //     // Reanudar o iniciar reproducción
-  //     if (!audioPlayer.src || audioPlayer.src !== this.playlist[this.currentTrackIndex].url) {
-  //       this.playAudio(true); // Reproducir desde el principio si el src no coincide
-  //     } else {
-  //       audioPlayer.play(); // Reanudar desde el punto actual
-  //     }
-  //     this.isPlaying = true;
-  //   }
-
-  //   this.cdRef.detectChanges();
-  // }
-
-  // playAudio(resetProgress: boolean = false): void {
-  //   const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
-
-  //   if (resetProgress || audioPlayer.src !== this.playlist[this.currentTrackIndex].url) {
-  //     audioPlayer.src = this.playlist[this.currentTrackIndex].url;
-  //     audioPlayer.currentTime = 0; // Reinicia el progreso si es necesario
-  //   }
-
-  //   audioPlayer.play();
-  //   this.isPlaying = true;
-
-  //   audioPlayer.ontimeupdate = () => {
-  //     this.currentProgress =
-  //       (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
-  //   };
-
-  //   audioPlayer.onended = () => {
-  //     if (this.isRepeat) {
-  //       this.playAudio(true);
-  //     } else {
-  //       this.playNext();
-  //     }
-  //   };
-  // }
 
   togglePlay(): void {
     const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
@@ -206,27 +103,6 @@ constructor(private cdRef: ChangeDetectorRef){}
       }
     };
   }
-
-
-// Si this.isRepeat es true, que el siguiente metodo coloque la misma cancion:
-
-  // playNext(): void {
-  //   const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
-
-  //   if (this.isShuffle) {
-  //     this.currentTrackIndex = Math.floor(
-  //       Math.random() * this.playlist.length
-  //     );
-  //   } else {
-  //     this.currentTrackIndex =
-  //       (this.currentTrackIndex + 1) % this.playlist.length;
-  //   }
-
-  //   audioPlayer.src = this.playlist[this.currentTrackIndex].url; // Cambiar de canción
-  //   audioPlayer.currentTime = 0; // Reiniciar el progreso
-  //   this.playAudio(true); // Reproducir la nueva canción
-  // }
-
 
   playNext(): void {
     const audioPlayer = document.querySelector('audio') as HTMLAudioElement;
@@ -286,4 +162,6 @@ constructor(private cdRef: ChangeDetectorRef){}
     audioPlayer.currentTime = (Number(input.value) / 100) * audioPlayer.duration;
     this.currentProgress = Number(input.value);
   }
+
+
 }

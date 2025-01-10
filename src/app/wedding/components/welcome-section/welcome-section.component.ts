@@ -46,7 +46,7 @@ export class WelcomeSectionComponent implements OnInit, AfterViewInit  {
       })
       .to(textElement, {
         duration: 2,              // Cambio de color
-        color: "rgb(167, 55, 219)",         // Cambia el color del texto
+        color: "rgb(160, 66, 204)",         // Cambia el color del texto
         ease: "none"
       })
       .to(".Aragon.text:before", {
