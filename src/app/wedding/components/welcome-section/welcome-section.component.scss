@@ -1,20 +1,6 @@
-@import '~animate.css/animate.min.css';
 
 .oliver {
   font-family: 'Oliver-Blush', sans-serif;
-}
-
-.fondo {
-  background:
-    url('../../../../assets/images/efecto.jpg'), /* Imagen encima del fondo */
-    linear-gradient(45deg, rgba(155, 99, 253, 1), rgb(119, 63, 216)); /* Gradiente de fondo */
-  background-size: cover; /* Ajusta tanto el fondo como la imagen al contenedor */
-  background-position: center; /* Centra tanto el fondo como la imagen */
-  background-blend-mode: color-burn; /* Efecto de mezcla para la imagen */
-  height: 100vh; /* Ajusta la altura del contenedor */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .Aragon.text {
