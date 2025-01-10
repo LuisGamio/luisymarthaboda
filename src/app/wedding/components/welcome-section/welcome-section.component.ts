@@ -46,7 +46,7 @@ export class WelcomeSectionComponent implements OnInit, AfterViewInit  {
       })
       .to(textElement, {
         duration: 2,              // Cambio de color
-        color: "rgb(238, 220, 60)",         // Cambia el color del texto
+        color: "rgb(240, 169, 37)",         // Cambia el color del texto
         ease: "none"
       })
       .to(".Aragon.text:before", {
@@ -56,7 +56,7 @@ export class WelcomeSectionComponent implements OnInit, AfterViewInit  {
       })
       .to(textElement, {
         duration: 2,              // Regresa al color original
-        color: "rgb(107, 13, 214)",         // Color original del texto
+        color: "rgb(93, 60, 238)",         // Color original del texto
         ease: "none"
       })
       .to(".Aragon.text:before", {
