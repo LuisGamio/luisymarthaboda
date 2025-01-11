@@ -1,132 +1,131 @@
-<div style="width: 100%; height: 100%; background: #2F3E53; flex-direction: column; justify-content: center; align-items: center; gap: 17px; display: inline-flex">
-  <div style="height: 1209px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 21px; display: flex">
-      <div style="width: 130px; height: 100px; align-items: center; text-align: center; margin-top: 40px;">
-        <i class="material-icons icon-white">card_giftcard</i>
+<div class="fondo"
+  style="width: 100%; height: 100%; flex-direction: column; justify-content: center; align-items: center; gap: 17px; display: inline-flex">
+  <div
+    style="height: 1059px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 21px; display: flex">
+    <div style="width: 130px; height: 100px; align-items: center; text-align: center; margin-top: 40px;">
+      <i class="material-icons icon-white">card_giftcard</i>
+    </div>
+    <div class="Aragon"
+      style="width: 340px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
+      El mejor regalo será compartir contigo este día tan especial para nosotros; sin embargo, cualquier detalle de tu
+      parte será recibido con mucho cariño.</div>
+    <div style="width: 130px; height: 100px; align-items: center; text-align: center;">
+      <i class="material-icons icon-white">mail_outline</i>
+    </div>
+    <div class="LastChristmas"
+      style="width: 279px; text-align: center; color: white; font-size: 36px; font-weight: 100; word-wrap: break-word">
+      Lluvia de sobres</div>
+    <div class="Aragon"
+      style="width: 340px; text-align: center; color: white; font-size: 16px;font-weight: 100; word-wrap: break-word">Es
+      la tradición de regalar dinero en un sobre a los esposos en el día del evento ♥</div>
+    <div style="width: 130px; height: 80px; align-items: center; text-align: center;">
+      <i class="material-icons icon-white">compare_arrows</i>
+    </div>
+
+    <div class="LastChristmas"
+      style="width: 279px; text-align: center; color: white; font-size: 36px; font-weight: 100; word-wrap: break-word">
+      Transferencia</div>
+    <div
+      style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+      <div class="Inika"
+        style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
+        INTERBANK</div>
+        <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
+
+      <div
+        style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
+
+
+        <div class="Aragon"
+          style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          <span *ngIf="!copied1; else copiedMessage1">5313091148299</span>
+          <ng-template #copiedMessage1>
+            <span>¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('5313091148299', 'copied1')" title="Copiar">
+            content_copy
+          </i>
+        </div>
+        <div class="Aragon"
+          style="align-self: stretch; text-align: center; color: white; font-size: 12px;font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          <span *ngIf="!copied2; else copiedMessage2">CCI: 00237019192671601950</span>
+          <ng-template #copiedMessage2>
+            <span>¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('00237019192671601950', 'copied2')"
+            title="Copiar">
+            content_copy
+          </i>
+        </div>
+
+
+
       </div>
-      <div style="width: 340px; text-align: center; color: white; font-size: 16px; font-family: Inria Serif; font-weight: 100; word-wrap: break-word">El mejor regalo será compartir contigo este día tan especial para nosotros; sin embargo, cualquier detalle de tu parte será recibido con mucho cariño.</div>
-      <div style="width: 130px; height: 100px; align-items: center; text-align: center;">
-        <i class="material-icons icon-white">mail_outline</i>
-      </div>
-      <div class="LastChristmas" style="width: 279px; text-align: center; color: white; font-size: 36px; font-weight: 100; word-wrap: break-word">Lluvia de sobres</div>
-      <div style="width: 340px; text-align: center; color: white; font-size: 16px; font-family: Inria Serif; font-weight: 100; word-wrap: break-word">Es la tradición de regalar dinero en un sobre a los esposos en el día del evento ♥</div>
-      <div style="width: 130px; height: 80px; align-items: center; text-align: center;">
-        <i class="material-icons icon-white">compare_arrows</i>
-      </div>
-
-      <div class="LastChristmas" style="width: 279px; text-align: center; color: white; font-size: 36px; font-weight: 100; word-wrap: break-word">Transferencia</div>
-      <div style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-          <div class="Inika" style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">INTERBANK</div>
-          <div style="width: 27px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid; align-items: center; text-align: center;"></div>
-          <div style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-              <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">5313091148299</div>
-              <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">CCI: 00237019192671601950</div> -->
-              <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-                <span>5313091148299</span>
-                <i
-                  class="material-icons copy-icon"
-                  (click)="copyToClipboard('5313091148299')"
-                  title="Copiar">
-                  content_copy
-                </i>
-              </div>
-              <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-                <span>CCI: 00237019192671601950</span>
-                <i
-                  class="material-icons copy-icon"
-                  (click)="copyToClipboard('00237019192671601950')"
-                  title="Copiar">
-                  content_copy
-                </i>
-              </div> -->
-
-              <div
-  style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-  <span *ngIf="!copied1; else copiedMessage1">5313091148299</span>
-  <ng-template #copiedMessage1>
-    <span>¡Copiado!</span>
-  </ng-template>
-  <i
-    class="material-icons copy-icon"
-    (click)="copyToClipboard('5313091148299', 'copied1')"
-    title="Copiar">
-    content_copy
-  </i>
-</div>
-<div
-  style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-  <span *ngIf="!copied2; else copiedMessage2">CCI: 00237019192671601950</span>
-  <ng-template #copiedMessage2>
-    <span>¡Copiado!</span>
-  </ng-template>
-  <i
-    class="material-icons copy-icon"
-    (click)="copyToClipboard('00237019192671601950', 'copied2')"
-    title="Copiar">
-    content_copy
-  </i>
-</div>
-
-
-
-          </div>
-      </div>
-      <div style="width: 340px; height: 73px; border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-          <div class="Inika" style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">BCP</div>
-          <div style="width: 27px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
-          <div style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-              <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">37091926716019</div>
+    </div>
+    <div
+      style="width: 340px; height: 73px; border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div class="Inika"
+        style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
+        BCP</div>
+        <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
+      <div
+        style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
+        <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">37091926716019</div>
               <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">CCI: 00237019192671601950</div> -->
 
-              <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-                <span *ngIf="!copied3; else copiedMessage3">37091926716019</span>
-                <ng-template #copiedMessage3>
-                  <span>¡Copiado!</span>
-                </ng-template>
-                <i
-                  class="material-icons copy-icon"
-                  (click)="copyToClipboard('37091926716019', 'copied3')"
-                  title="Copiar">
-                  content_copy
-                </i>
-              </div>
-              <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-                <span *ngIf="!copied4; else copiedMessage4">CCI: 00237019192671601950</span>
-                <ng-template #copiedMessage4>
-                  <span>¡Copiado!</span>
-                </ng-template>
-                <i
-                  class="material-icons copy-icon"
-                  (click)="copyToClipboard('00237019192671601950', 'copied4')"
-                  title="Copiar">
-                  content_copy
-                </i>
-              </div>
+        <div class="Aragon"
+          style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          <span *ngIf="!copied3; else copiedMessage3">37091926716019</span>
+          <ng-template #copiedMessage3>
+            <span>¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('37091926716019', 'copied3')" title="Copiar">
+            content_copy
+          </i>
+        </div>
+        <div class="Aragon"
+          style="align-self: stretch; text-align: center; color: white; font-size: 12px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          <span *ngIf="!copied4; else copiedMessage4">CCI: 00237019192671601950</span>
+          <ng-template #copiedMessage4>
+            <span>¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('00237019192671601950', 'copied4')"
+            title="Copiar">
+            content_copy
+          </i>
+        </div>
 
 
-          </div>
       </div>
-      <div style="width: 340px; height: 73px; border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-          <div class="Inika" style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">YAPE<br/>PLIN</div>
-          <div style="width: 27px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px white solid"></div>
-          <div style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-              <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 18px; font-family: Inika; font-weight: 100; word-wrap: break-word">970 855 626</div> -->
+    </div>
+    <div
+      style="width: 340px; height: 73px; border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+      <div class="Inika"
+        style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
+        YAPE<br />PLIN</div>
+        <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
+      <div
+        style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
+        <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 18px; font-family: Inika; font-weight: 100; word-wrap: break-word">970 855 626</div> -->
 
-              <div style="align-self: stretch; text-align: center; color: white; font-size: 18px; font-family: Inika; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-                <span *ngIf="!copied5; else copiedMessage5">970 855 626</span>
-                <ng-template #copiedMessage5>
-                  <span style="font-size: 16px;">¡Copiado!</span>
-                </ng-template>
-                <i
-                  class="material-icons copy-icon"
-                  (click)="copyToClipboard('970855626', 'copied5')"
-                  title="Copiar">
-                  content_copy
-                </i>
-              </div>
+        <div class="Aragon"
+          style="align-self: stretch; text-align: center; color: white; font-size: 18px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          <span *ngIf="!copied5; else copiedMessage5">970 855 626</span>
+          <ng-template #copiedMessage5>
+            <span style="font-size: 16px;">¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('970855626', 'copied5')" title="Copiar">
+            content_copy
+          </i>
+        </div>
 
-          </div>
       </div>
-      <div style="width: 350px; text-align: center; color: white; font-size: 24px; font-family: Inika; font-weight: 200; word-wrap: break-word">Luis Miguel<br/>Gamio Patricio</div>
-      <div style="width: 340px; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 200; word-wrap: break-word">Urb. La Aurora Calle Sinchi Roca Mz. D Lote 10 - Huaral</div>
+    </div>
+    <div
+      style="width: 350px; text-align: center; color: white; font-size: 24px; font-family: Inika; font-weight: 200; word-wrap: break-word">
+      Luis Miguel<br />Gamio Patricio</div>
+    <div
+      style="width: 340px; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 200; word-wrap: break-word">
+      Urb. La Aurora Calle Sinchi Roca Mz. D Lote 10 - Huaral</div>
   </div>
 </div>
