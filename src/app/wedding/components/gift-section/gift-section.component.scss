@@ -15,3 +15,9 @@
 .copy-icon:hover {
   color: lightblue;
 }
+
+.icon-whites {
+  width: 90px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  filter: brightness(0) invert(1); /* Convierte la imagen a blanco si es negra */
+}
