@@ -1,3 +1,9 @@
+.container-principal {
+  height: 100%;
+  width: 100%;
+  background-color: #b57edc;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -8,8 +14,6 @@
   width: 100%;
   background-color: #b57edc;
 }
-
-
 
 .invitation {
   width: 320px;
@@ -111,16 +115,20 @@
   background-size: 120%;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; /* Para posicionar el contenido interno */
-  overflow: visible; /* Permite que los hijos sobresalgan */
-  z-index: 2; /* Asegura que esté encima del fondo */
+  position: relative;
+  /* Para posicionar el contenido interno */
+  overflow: visible;
+  /* Permite que los hijos sobresalgan */
+  z-index: 2;
+  /* Asegura que esté encima del fondo */
 }
 
 .container-2 .color-background {
   flex: 0 0 70%;
   background-color: rgb(47, 62, 83);
   position: relative;
-  z-index: 1; /* Debajo del área de la imagen */
+  z-index: 1;
+  /* Debajo del área de la imagen */
 }
 
 .container-2 .names {
@@ -139,12 +147,17 @@
   margin-top: 60px;
   margin-bottom: 60px;
   width: 100%;
-  height: auto;/* Limita la altura para que no exceda la pantalla */
+  height: auto;
+  /* Limita la altura para que no exceda la pantalla */
   position: absolute;
-  top: 0; /* Inicia desde la parte superior del contenedor */
-  left: 0; /* Inicia desde la izquierda */
-  right: 0; /* Asegura que no haya desplazamiento horizontal */
-  z-index: 3; /* Por encima de ambos fondos */
+  top: 0;
+  /* Inicia desde la parte superior del contenedor */
+  left: 0;
+  /* Inicia desde la izquierda */
+  right: 0;
+  /* Asegura que no haya desplazamiento horizontal */
+  z-index: 3;
+  /* Por encima de ambos fondos */
 }
 
 
