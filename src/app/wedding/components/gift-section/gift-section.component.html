@@ -28,15 +28,22 @@
     <div class="Zachar"
       style="width: 279px; text-align: center; color: white; font-size: 27px; font-weight: 100; word-wrap: break-word; margin-bottom: 10px;">
       Transferencia</div>
-    <div
-      style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+    <!-- <div
+      style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; display: inline-flex">
+
       <div class="Inika"
-        style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
-        INTERBANK</div>
-        <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
+        style="background-color: red; display: flex; justify-content: center; align-items: center; width: 30%; height: 100px;">
+        <span style="color: white; font-size: 16px; font-weight: 100; word-wrap: break-word;">
+          INTERBANK
+        </span>
+      </div>
+
+
+
+      <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
 
       <div
-        style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
+        style="width: auto; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
 
 
         <div class="Aragon"
@@ -49,6 +56,7 @@
             content_copy
           </i>
         </div>
+
         <div class="Aragon"
           style="align-self: stretch; text-align: center; color: white; font-size: 12px;font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
           <span *ngIf="!copied2; else copiedMessage2">CCI: 00237019192671601950</span>
@@ -64,20 +72,69 @@
 
 
       </div>
-    </div>
+    </div> -->
+
     <div
-      style="width: 340px; height: 73px; border-radius: 4px; border: 1px white solid; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; display: flex; align-items: center;">
+
+      <!-- Contenedor de INTERBANK -->
       <div class="Inika"
-        style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
-        BCP</div>
-        <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
+        style="display: flex; justify-content: center; align-items: center; width: 30%; min-width: 125px; height: 100%; border-right: 1px solid white;">
+        <span style="color: white; font-size: 16px; font-weight: 100;">INTERBANK</span>
+      </div>
+
+      <!-- Separador -->
+      <div style="width: 1px; height: 100%; background-color: white;"></div>
+
+      <!-- Contenedor de datos -->
       <div
-        style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-        <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">37091926716019</div>
-              <div style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-family: Inika; font-weight: 100; word-wrap: break-word">CCI: 00237019192671601950</div> -->
+        style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 10px;">
 
         <div class="Aragon"
-          style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          style="color: white; font-size: 14px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
+          <span *ngIf="!copied1; else copiedMessage1">5313091148299</span>
+          <ng-template #copiedMessage1>
+            <span>¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('5313091148299', 'copied1')" title="Copiar">
+            content_copy
+          </i>
+        </div>
+
+        <div class="Aragon"
+          style="color: white; font-size: 12px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
+          <span *ngIf="!copied2; else copiedMessage2">CCI: 00237019192671601950</span>
+          <ng-template #copiedMessage2>
+            <span>¡Copiado!</span>
+          </ng-template>
+          <i class="material-icons copy-icon" (click)="copyToClipboard('00237019192671601950', 'copied2')"
+            title="Copiar">
+            content_copy
+          </i>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div
+    style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; display: flex; align-items: center;">
+
+      <!-- Contenedor BCP -->
+      <div class="Inika"
+      style="display: flex; justify-content: center; align-items: center; width: 30%; min-width: 125px; height: 100%; border-right: 1px solid white;">
+      <span style="color: white; font-size: 16px; font-weight: 100;">BCP</span>
+    </div>
+
+      <!-- Separador -->
+      <div style="width: 1px; height: 100%; background-color: white;"></div>
+
+      <!-- Contenedor de datos -->
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 10px;">
+
+        <!-- Número principal -->
+        <div class="Aragon"
+        style="color: white; font-size: 14px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
           <span *ngIf="!copied3; else copiedMessage3">37091926716019</span>
           <ng-template #copiedMessage3>
             <span>¡Copiado!</span>
@@ -86,8 +143,10 @@
             content_copy
           </i>
         </div>
+
+        <!-- CCI -->
         <div class="Aragon"
-          style="align-self: stretch; text-align: center; color: white; font-size: 12px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+          style="color: white; font-size: 12px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
           <span *ngIf="!copied4; else copiedMessage4">CCI: 00237019192671601950</span>
           <ng-template #copiedMessage4>
             <span>¡Copiado!</span>
@@ -98,21 +157,29 @@
           </i>
         </div>
 
-
       </div>
     </div>
-    <div
-      style="width: 340px; height: 73px; border-radius: 4px; border: 1px white solid; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-      <div class="Inika"
-        style="width: 110px; text-align: center; color: white; font-size: 16px; font-weight: 100; word-wrap: break-word">
-        YAPE<br />PLIN</div>
-        <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
-      <div
-        style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-        <!-- <div style="align-self: stretch; text-align: center; color: white; font-size: 18px; font-family: Inika; font-weight: 100; word-wrap: break-word">970 855 626</div> -->
 
+
+    <div
+    style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; display: flex; align-items: center;">
+
+      <!-- Contenedor YAPE/PLIN -->
+      <div class="Inika"
+      style="display: flex; justify-content: center; align-items: center; width: 30%; min-width: 125px; height: 100%; border-right: 1px solid white;">
+      <span style="color: white; font-size: 16px; font-weight: 100;">YAPE<br />PLIN</span>
+    </div>
+
+      <!-- Separador -->
+      <div style="width: 1px; height: 100%; background-color: white;"></div>
+
+      <!-- Contenedor de número -->
+      <div
+      style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 10px;">
+
+        <!-- Número -->
         <div class="Aragon"
-          style="align-self: stretch; text-align: center; color: white; font-size: 18px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
+        style="color: white; font-size: 18px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
           <span *ngIf="!copied5; else copiedMessage5">970 855 626</span>
           <ng-template #copiedMessage5>
             <span style="font-size: 16px;">¡Copiado!</span>
@@ -124,12 +191,14 @@
 
       </div>
     </div>
+
+
     <div class="ArchattsonHollmytro"
       style="width: 100%; text-align: center; color: white; font-size: 36px; font-weight: 100; word-wrap: break-word; padding-top: 20px;padding-bottom: 10px; margin-left: 20px; margin-right: 20px">
       Luis Miguel Gamio Patricio</div>
     <div class="Aragon"
       style="width: 340px; text-align: center; color: white; font-size: 20px; font-weight: 200; word-wrap: break-word">
-      Urb. La Aurora Calle Sinchi Roca<br/>Mz. D Lote 10 - Huaral</div>
+      Urb. La Aurora Calle Sinchi Roca<br />Mz. D Lote 10 - Huaral</div>
   </div>
 
   <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
