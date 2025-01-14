@@ -288,11 +288,11 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
+    // linear-gradient(45deg, rgba(155, 99, 253, 1), rgb(119, 63, 216));
 .fondo {
   background:
     url('/assets/images/efecto.jpg'),
-    linear-gradient(45deg, rgba(155, 99, 253, 1), rgb(119, 63, 216));
+    linear-gradient(45deg, #8c52ff, #b57edc);
   /* Gradiente de fondo */
   background-size: cover;
   /* Ajusta tanto el fondo como la imagen al contenedor */
