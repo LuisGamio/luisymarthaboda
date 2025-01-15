@@ -33,3 +33,10 @@
 .copy-button:hover {
   color: #e700c1; /* Color al pasar el cursor */
 }
+
+
+.icon-whites-2 {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  filter: brightness(0) invert(1); /* Convierte la imagen a blanco si es negra */
+}
