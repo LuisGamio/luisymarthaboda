@@ -28,169 +28,117 @@
     <div class="Zachar"
       style="width: 279px; text-align: center; color: white; font-size: 27px; font-weight: 100; word-wrap: break-word; margin-bottom: 10px;">
       Transferencia</div>
-    <!-- <div
-      style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; justify-content: center; align-items: center; display: inline-flex">
 
-      <div class="Inika"
-        style="background-color: red; display: flex; justify-content: center; align-items: center; width: 30%; height: 100px;">
-        <span style="color: white; font-size: 16px; font-weight: 100; word-wrap: break-word;">
+
+
+    <!-- INTERBANK -->
+
+    <div style=" width: 100%; max-width: 330px; display: flex; flex-direction: column; gap: 20px; margin-bottom: 10px;">
+      <div style=" width: 100%; display: flex; flex-direction: row; gap: 5px;">
+        <div class="Inika"
+          style="width: 30%; height: 100%; border: 1px solid white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; display: flex; justify-content: center; text-align:center; align-items: center; color: white; padding: 10px 10px;">
           INTERBANK
-        </span>
-      </div>
-
-
-
-      <div style="width: 1px; height: 100%; background-color: white; margin: auto;"></div>
-
-      <div
-        style="width: auto; flex-direction: column; justify-content: center; align-items: flex-start; gap: 11px; display: inline-flex">
-
-
-        <div class="Aragon"
-          style="align-self: stretch; text-align: center; color: white; font-size: 14px; font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-          <span *ngIf="!copied1; else copiedMessage1">5313091148299</span>
-          <ng-template #copiedMessage1>
-            <span>¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('5313091148299', 'copied1')" title="Copiar">
-            content_copy
-          </i>
         </div>
 
-        <div class="Aragon"
-          style="align-self: stretch; text-align: center; color: white; font-size: 12px;font-weight: 100; word-wrap: break-word; display: flex; justify-content: center; align-items: center;">
-          <span *ngIf="!copied2; else copiedMessage2">CCI: 00237019192671601950</span>
-          <ng-template #copiedMessage2>
-            <span>¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('00237019192671601950', 'copied2')"
-            title="Copiar">
-            content_copy
-          </i>
-        </div>
+        <div
+          style="width: 70%; border: 1px solid white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; gap: 10px; display: flex; justify-content: center; text-align:center; flex-direction: column; color: white; padding: 10px 10px;">
+          <div style="width: 100%; display: flex; text-align:center; justify-content: center; gap: 5px;">
+            <div class="Aragon">{{this.myform.controls['interbank'].value}}</div>
+            <div>
+              <button (click)="copy('interbank')" class="copy-button">
+                <i class="fas fa-copy"></i>
+              </button>
 
+            </div>
+          </div>
 
+          <div style="width: 100%; display: flex; text-align:center; justify-content: center; gap: 5px;">
+            <div class="Aragon">CCI: {{this.myform.controls['interbankCCI'].value}}</div>
+            <div>
+              <button (click)="copy('interbankCCI')" class="copy-button">
+                <i class="fas fa-copy"></i>
+              </button>
 
-      </div>
-    </div> -->
+            </div>
+          </div>
 
-    <div
-      style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; display: flex; align-items: center;">
-
-      <!-- Contenedor de INTERBANK -->
-      <div class="Inika"
-        style="display: flex; justify-content: center; align-items: center; width: 30%; min-width: 125px; height: 100%; border-right: 1px solid white;">
-        <span style="color: white; font-size: 16px; font-weight: 100;">INTERBANK</span>
-      </div>
-
-      <!-- Separador -->
-      <div style="width: 1px; height: 100%; background-color: white;"></div>
-
-      <!-- Contenedor de datos -->
-      <div
-        style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 10px;">
-
-        <div class="Aragon"
-          style="color: white; font-size: 14px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
-          <span *ngIf="!copied1; else copiedMessage1">5313091148299</span>
-          <ng-template #copiedMessage1>
-            <span>¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('5313091148299', 'copied1')" title="Copiar">
-            content_copy
-          </i>
-        </div>
-
-        <div class="Aragon"
-          style="color: white; font-size: 12px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
-          <span *ngIf="!copied2; else copiedMessage2">CCI: 00237019192671601950</span>
-          <ng-template #copiedMessage2>
-            <span>¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('00237019192671601950', 'copied2')"
-            title="Copiar">
-            content_copy
-          </i>
         </div>
 
       </div>
+
     </div>
 
+    <!-- FIN INTERBANK -->
 
-    <div
-    style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; display: flex; align-items: center;">
+    <!-- BCP -->
 
-      <!-- Contenedor BCP -->
-      <div class="Inika"
-      style="display: flex; justify-content: center; align-items: center; width: 30%; min-width: 125px; height: 100%; border-right: 1px solid white;">
-      <span style="color: white; font-size: 16px; font-weight: 100;">BCP</span>
-    </div>
-
-      <!-- Separador -->
-      <div style="width: 1px; height: 100%; background-color: white;"></div>
-
-      <!-- Contenedor de datos -->
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 10px;">
-
-        <!-- Número principal -->
-        <div class="Aragon"
-        style="color: white; font-size: 14px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
-          <span *ngIf="!copied3; else copiedMessage3">37091926716019</span>
-          <ng-template #copiedMessage3>
-            <span>¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('37091926716019', 'copied3')" title="Copiar">
-            content_copy
-          </i>
+    <div style=" width: 100%; max-width: 330px; display: flex; flex-direction: column; gap: 20px;">
+      <div style=" width: 100%; display: flex; flex-direction: row; gap: 5px;">
+        <div class="Inika"
+          style="width: 30%; height: 100%; border: 1px solid white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; display: flex; justify-content: center; text-align:center; align-items: center; color: white; padding: 10px 10px;">
+          BCP
         </div>
 
-        <!-- CCI -->
-        <div class="Aragon"
-          style="color: white; font-size: 12px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
-          <span *ngIf="!copied4; else copiedMessage4">CCI: 00237019192671601950</span>
-          <ng-template #copiedMessage4>
-            <span>¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('00237019192671601950', 'copied4')"
-            title="Copiar">
-            content_copy
-          </i>
+        <div
+          style="width: 70%; border: 1px solid white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; gap: 10px; display: flex; justify-content: center; text-align:center; flex-direction: column; color: white; padding: 10px 10px;">
+          <div style="width: 100%; display: flex; text-align:center; justify-content: center; gap: 5px;">
+            <div class="Aragon">{{this.myform.controls['bcp'].value}}</div>
+            <div>
+              <button (click)="copy('bcp')" class="copy-button">
+                <i class="fas fa-copy"></i>
+              </button>
+
+            </div>
+          </div>
+
+          <div style="width: 100%; display: flex; text-align:center; justify-content: center; gap: 5px;">
+            <div class="Aragon">CCI: {{this.myform.controls['bcpCCI'].value}}</div>
+            <div>
+              <button (click)="copy('bcpCCI')" class="copy-button">
+                <i class="fas fa-copy"></i>
+              </button>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
+
     </div>
 
+    <!-- FIN BCP -->
 
-    <div
-    style="width: 340px; height: 73px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; border: 1px white solid; display: flex; align-items: center;">
+    <!-- YAPE PLIN -->
 
-      <!-- Contenedor YAPE/PLIN -->
-      <div class="Inika"
-      style="display: flex; justify-content: center; align-items: center; width: 30%; min-width: 125px; height: 100%; border-right: 1px solid white;">
-      <span style="color: white; font-size: 16px; font-weight: 100;">YAPE<br />PLIN</span>
-    </div>
+    <div style=" width: 100%; max-width: 330px; display: flex; flex-direction: column; gap: 20px; margin-bottom: 20px;">
+      <div style=" width: 100%; display: flex; flex-direction: row; gap: 5px;">
+        <div class="Inika"
+          style="width: 30%; height: 100%; border: 1px solid white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; display: flex; justify-content: center; text-align:center; align-items: center; color: white; padding: 10px 10px;">
+          YAPE/PLIN
+        </div>
 
-      <!-- Separador -->
-      <div style="width: 1px; height: 100%; background-color: white;"></div>
+        <div
+          style="width: 70%; border: 1px solid white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 4px; gap: 10px; display: flex; justify-content: center; text-align:center; flex-direction: column; color: white; padding: 10px 10px;">
+          <div style="width: 100%; display: flex; text-align:center; justify-content: center; gap: 5px;">
+            <div class="Aragon">{{this.myform.controls['yapePlin'].value}}</div>
+            <div>
+              <button (click)="copy('yapePlin')" class="copy-button">
+                <i class="fas fa-copy"></i>
+              </button>
 
-      <!-- Contenedor de número -->
-      <div
-      style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 10px;">
+            </div>
+          </div>
 
-        <!-- Número -->
-        <div class="Aragon"
-        style="color: white; font-size: 18px; font-weight: 100; display: flex; align-items: center; gap: 5px;">
-          <span *ngIf="!copied5; else copiedMessage5">970 855 626</span>
-          <ng-template #copiedMessage5>
-            <span style="font-size: 16px;">¡Copiado!</span>
-          </ng-template>
-          <i class="material-icons copy-icon" (click)="copyToClipboard('970855626', 'copied5')" title="Copiar">
-            content_copy
-          </i>
+
         </div>
 
       </div>
+
     </div>
+
+    <!-- FIN YAPLE PLIN -->
+
 
 
     <div class="ArchattsonHollmytro"

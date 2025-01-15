@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -23,7 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     WeddingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es-PE' }],
   bootstrap: [AppComponent]

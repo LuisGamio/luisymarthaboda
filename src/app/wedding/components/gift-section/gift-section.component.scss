@@ -21,3 +21,15 @@
   height: auto;
   filter: brightness(0) invert(1); /* Convierte la imagen a blanco si es negra */
 }
+
+
+.copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Tamaño del ícono */
+  color: #ffffff;    /* Cambia el color según necesites */
+}
+.copy-button:hover {
+  color: #e700c1; /* Color al pasar el cursor */
+}
