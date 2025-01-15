@@ -16,4 +16,8 @@ export class AssistanceSectionComponent {
     window.open(url, "_blank");
 
   }
+
+  openLink(url: string) {
+    window.open(url, "_blank");
+  }
 }

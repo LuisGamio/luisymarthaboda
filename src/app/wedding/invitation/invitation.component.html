@@ -1,25 +1,25 @@
 <div *ngIf="loading">
-      <app-loading></app-loading>
-    </div>
+  <app-loading></app-loading>
+</div>
 
-    <div *ngIf="!loading">
-      <div *ngIf="introduction">
-        <app-introduction-section (playEvent)="onPlay($event)"></app-introduction-section>
-      </div>
+<div *ngIf="!loading">
+  <div *ngIf="introduction">
+    <app-introduction-section (playEvent)="onPlay($event)"></app-introduction-section>
+  </div>
 
-      <div *ngIf="!introduction">
-        <app-welcome-section [musicPlay]="musicPlay"></app-welcome-section>
+  <div *ngIf="!introduction">
+    <app-welcome-section [musicPlay]="musicPlay"></app-welcome-section>
 
-        <app-parents-section></app-parents-section>
+    <app-parents-section></app-parents-section>
 
-        <app-date-section></app-date-section>
+    <app-date-section></app-date-section>
 
-        <app-address-section></app-address-section>
+    <app-address-section></app-address-section>
 
-        <app-gift-section></app-gift-section>
+    <app-gift-section></app-gift-section>
 
-        <app-dress-code-section></app-dress-code-section>
+    <app-dress-code-section></app-dress-code-section>
 
-        <app-assistance-section></app-assistance-section>
-      </div>
-    </div>
+    <app-assistance-section></app-assistance-section>
+  </div>
+</div>

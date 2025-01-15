@@ -18,14 +18,29 @@
         (onClick)="confirmar()" [color]="'mode2'" style="margin-bottom: 10px;">
       </app-button>
     </div>
-    <!-- <img
-      style="width: 261px; height: 174px; transform: rotate(-6deg); transform-origin: 0 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: 10px white solid"
-      src="../../../assets/images/asistencia.jpeg" /> -->
+
     <div class="LastChristmas"
       style="width: 279px; text-align: center; color: white; font-size: 45px; font-weight: 100; word-wrap: break-word; padding-top: 10px;">
       Te esperamos</div>
   </div>
-  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex; position: relative;">
     <img style="width: 100%; height: auto" src="../../../assets/images/fotopick3.png" />
+    <!-- Texto superpuesto -->
+    <div style="
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #8c52ff;
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+      background: rgba(255, 255, 255, 1);
+      padding: 10px 10px;
+      border-radius: 5px;
+      width: auto;
+      min-width: 200px; text-align: center;" (click)="openLink('https://beacons.ai/LuisGamio')">
+      Hecho con ♥ por <strong>Luis Gamio</strong>
+    </div>
+
   </div>
 </div>

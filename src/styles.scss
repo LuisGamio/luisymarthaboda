@@ -179,6 +179,13 @@ app-root {
 }
 
 @font-face {
+  font-family: 'Philosopher';
+  src: url('assets/fonts/Philosopher.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Nam';
   src: url('assets/fonts/Nam.ttf') format('truetype');
   font-weight: normal;
@@ -236,6 +243,10 @@ app-root {
 
 .Zachar {
   font-family: 'Zachar', sans-serif;
+}
+
+.Philosopher{
+  font-family: 'Philosopher', sans-serif;
 }
 
 .Sothardjo {
